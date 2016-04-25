@@ -29,7 +29,6 @@ app.post('/lions', function(req, res) {
   res.json(lion);
 });
 
-
 app.put('/lions/:id', function(req, res) {
   var update = req.body;
   if (update.id) {
@@ -50,7 +49,7 @@ app.delete('/lions/:id' ,  function(req, res) {
   if (update.id) {
     delete update.id
   }
-);
+});
 
 app.set('port', (process.env.PORT || 8080));
 
